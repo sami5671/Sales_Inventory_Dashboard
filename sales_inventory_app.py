@@ -3,7 +3,12 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(page_title="Sales & Inventory Dashboard", layout="wide")
-st.title("🛒 Simple Sales & Inventory Dashboard")
+
+# Adding title using HTML <h1> tag
+st.markdown(
+    "<h1 style='text-align: center; color: #4CAF50;'>🛒 Simple Sales & Inventory Dashboard</h1>",
+    unsafe_allow_html=True,
+)
 
 
 @st.cache_data
